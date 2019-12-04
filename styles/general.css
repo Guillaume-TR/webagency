@@ -544,39 +544,13 @@ header nav ul li a {
 
     /*  END PROJETS  */
     
-
     /*  CONTACT  */
-
-    #contact { padding-top: 0; }
-
-
-    #contact #formulaire-contact {
-        position: relative;
-        display: flex;               /*  I.E  */
-    }
     
-    #contact #formulaire-contact form {
-        z-index: 2;
-        align-self: center;          /*  I.E  */
-        margin: 2rem 2rem 2rem auto;
-        min-width: 400px;
-        padding: 1.6rem;
-        text-align: left;
-        background-color: rgba(255, 255, 255, 0.8);
-        border-radius: 3px;
-    }
+    #contact #formulaire-contact form input { max-width: 500px }
     
-    #contact #formulaire-contact #map {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-    }
-
-    #contact #formulaire-contact #map iframe { opacity: .7; }
+    #contact #formulaire-contact form textarea { width: 500px }
 
     /*  END CONTACT  */
-
 }
 
 @media all and (min-width: 1281px) {
@@ -688,13 +662,38 @@ header nav ul li a {
     #projets #portfolio-projets .portfolio .portfolio-descr { display: none; }
 
     /*  END PROJETS  */
-
-
+   
     /*  CONTACT  */
 
+    #contact { padding-top: 0; }
+
+    #contact #formulaire-contact {
+        position: relative;
+        display: flex;               /*  I.E  */
+    }
+    
+    #contact #formulaire-contact form {
+        z-index: 2;
+        align-self: center;          /*  I.E  */
+        margin: 2rem 2rem 2rem auto;
+        min-width: 400px;
+        padding: 1.6rem;
+        text-align: left;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 3px;
+    }
+        
     #contact #formulaire-contact form input#btn-contact:hover { background-color: #2a7591; }
 
-    #contact #formulaire-contact #map { min-height: 800px; }
+    #contact #formulaire-contact #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        min-height: 800px;
+    }
+
+    #contact #formulaire-contact #map iframe { opacity: .7; }
 
     /*  END CONTACT  */
 }
